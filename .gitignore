@@ -1,8 +1,14 @@
+# Ignore JetBrains IDE settings
 .idea/
 
+# Ignore Python virtual environment
 venv/
 
+# Ignore Google API credentials
 credentials.json
 
+# Ignore Google API token
 token.json
 
+# Ignore Python bytecode files and cache
+__pycache__/
