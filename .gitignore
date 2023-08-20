@@ -1,17 +1,20 @@
+# Directories
 # Ignore JetBrains IDE settings
 .idea/
 
 # Ignore Python virtual environment
 venv/
 
+# Ignore Python bytecode files and cache
+__pycache__/
+
+
+# Files
 # Ignore Google API credentials
 credentials.json
 
 # Ignore Google API token
 token.json
-
-# Ignore Python bytecode files and cache
-__pycache__/
 
 # Ignore the trash emails file
 emails_to_send_to_trash.txt
