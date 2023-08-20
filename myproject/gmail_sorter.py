@@ -34,19 +34,18 @@ class SortGmail:
         return None
 
     # sort gmail inbox efficiently
-    def sort_inbox_efficient(self, query):
+    def sort_inbox(self, query):
         # the label that would be removed from all new emails
         inbox_label_id = self.get_label_id("INBOX")
 
         # retrieving unsorted emails from inbox
-        response = self.service.users().messages().list(userId=self.user_id,
-                                                        q=query,
+        response = self.service.users().messages().list(userId=self.user_id, q=query,
                                                         maxResults=self.MAX_RESULTS).execute()
         messages = response.get('messages', [])
 
         while messages:
             # creating a batch for which all api calls will be executed together
-            # to increase efficiency
+            # increases efficiency
             batch = self.service.new_batch_http_request()
 
             for message in messages:
@@ -60,7 +59,6 @@ class SortGmail:
                 if sender_header:
                     sender_parts = sender_header.rsplit(' ', 1)
                     sender_name = sender_parts[0].strip('""')
-
                     if len(sender_parts) > 1:
                         sender_email = sender_parts[1].strip('<>')
                     else:

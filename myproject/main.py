@@ -10,7 +10,7 @@ from gmail_sorter import SortGmail
 
 
 def is_valid_email(email):
-    # Regular expression pattern for email validation
+    # regular expression pattern for email validation
     pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
     return re.match(pattern, email)
 
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
             sorter = SortGmail(gmail_service, user_email)
             sorter.populate_name_to_id_map()
-            sorter.sort_inbox_efficient(query)
+            sorter.sort_inbox(query)
 
     except HttpError as error:
         print(error)
