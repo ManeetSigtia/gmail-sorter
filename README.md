@@ -16,7 +16,16 @@ Welcome to the Gmail Sorter project! This tool helps you organize your Gmail inb
 
 ## Introduction
 
-The Gmail Sorter project provides a way to sort and manage your Gmail inbox automatically. With this tool, you can create labels, organize emails, and perform various actions to streamline your inbox.
+Optimize your Gmail inbox management with the Gmail Sorter – a versatile tool designed to simplify your email organization process. Automatically create labels for emails, group them based on sender names, mark them as read, and enjoy a clutter-free inbox experience.
+
+### Key Features
+- Automated Label Creation: The Gmail Sorter intelligently generates labels from sender names extracted from email addresses. Emails from the same sender are grouped under a single label for seamless organization.
+
+- Effortless Inbox Organization: Let the Gmail Sorter handle the heavy lifting of categorizing emails. With automated labeling, your inbox stays organized and clutter-free.
+
+- Streamlined Labeling: Say goodbye to manual label assignments. The Gmail Sorter automatically adds labels, so you can focus on what matters most – your email content.
+
+- Efficient Email Management: Sort, label, and manage emails effortlessly. The Gmail Sorter moves emails to the trash, marks them as read, and streamlines your inbox management.
 
 ## Technologies Used
 
