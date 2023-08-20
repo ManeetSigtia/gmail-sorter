@@ -12,3 +12,6 @@ token.json
 
 # Ignore Python bytecode files and cache
 __pycache__/
+
+# Ignore the trash emails file
+emails_to_send_to_trash.txt
