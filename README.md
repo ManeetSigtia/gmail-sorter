@@ -120,6 +120,12 @@ and sign in with your Google account.
 - Select "Desktop app" as the application type.
 - Give your OAuth client a name (e.g., "Gmail Sorter Desktop App").
 - Click the "Create" button.
+- Scroll down to the "Test users" section.
+- Click the "Add Users" button.
+- Enter your Gmail email address (e.g., "youremail@gmail.com") into the input field.
+- Click "Add".
+  
+By adding your Gmail account as a test user, you're granting permission for the OAuth client to access your Gmail data during development and testing. This will help you authenticate and test your application without having to go through a full OAuth consent flow every time.
 
 #### 4. Download the JSON File containing your Credentials:
 - Find the newly created OAuth client ID in the list of OAuth 2.0 Client IDs.
